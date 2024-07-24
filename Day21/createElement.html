@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+        let title;
+        let container  = document.getElementById('container');
+        for (let i = 0; i < 3; i++) {
+            title = document.createElement('h1')
+            title.innerHTML ="hello world"
+            title.className = 'title'
+            title.style.fontSize = '24px'
+            title.style.border = '1px solid black'
+            container.appendChild(title);
+            title.textContent = i
+            console.log(title)
+        }
+    </script>
+</body>
+
+</html>

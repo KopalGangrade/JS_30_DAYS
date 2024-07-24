@@ -1,0 +1,52 @@
+<!-- // createing and adding element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the DOM</title>
+</head>
+<body class="dark">
+    <h1 id="intro-text">Manipulating the DOM</h1>
+
+    <script>
+
+        let topics = [
+            'intro to DOM',
+            'getting elements',
+            'querying the dom',
+            'creating Elements',
+            'remove Elements'
+        ];
+
+        let h1Element = document.getElementById("intro-text");
+        let scriptElement = document.querySelector("script");
+
+        let olElement = document.createElement("ol");
+        // document.body.appendChild(olElement);
+        // document.body.insertBefore(olElement, scriptElement);
+
+        // we can use afterbegin afterend , beforeend , 
+        // h1Element.insertAdjacentElement('beforebegin',olElement);
+
+        // ---------------------------------------
+        // create elements and text
+        // let li1 = document.createElement('li');
+        // let text1 = document.createTextNode('Intro to DOM');
+        // li1.appendChild(text1);
+        // olElement.appendChild(li1);
+// to create multiple Element and there text (MORE EASY WAY TO DO)
+
+
+
+topics.forEach(function(text){
+    let li = document.createElement('li');
+    li.innerHTML = text;
+    olElement.appendChild(li)
+});
+// olElement.removeChild(olElement.lastChild);
+
+    </script>
+</body>
+</html>

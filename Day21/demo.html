@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tongle</title>
+</head>
+<body>
+    <h1 id="intro-text">Intro to DOM.</h1>
+    <p>This is some content to display</p>
+    <div class="custom-bg">
+        <p>here is more content inside</p>
+        <div>
+            <p>and even more content</p>
+        </div>
+    </div>
+    <div>
+        <button onclick="document.body.classList.toggle('dark')">Toggle style</button>
+    </div>
+
+    <script>
+        let h1Element =document.getElementById('intro-text');
+        h1Element.firstChild.nodeValue = "this get method"
+        h1Element.style.color = "pink";
+
+        let pElements = document.getElementsByTagName('p'); // html collection
+        for (let pElement of pElements){
+            pElement.style.color = "purple";
+        }
+
+        let customDivs = document.getElementsByClassName('custom-bg');
+        for (let customdiv of customDivs){
+            customdiv.style.backgroundColor = "green";
+        }
+
+        let pElementsDivs = document.querySelectorAll("div p");
+        for (let element of pElementsDivs){
+            element.style.fontWeight = "bold";
+        }
+
+        let specialP = document.querySelector('div>p:not(div.custom-bg>p)');
+        specialP.style.textDecoration = "underline";
+    </script>
+</body>
+</html>

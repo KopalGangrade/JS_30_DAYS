@@ -1,0 +1,19 @@
+In DOM everything is node. ex. attribute, text
+
+document.body
+document.head
+
+concept of parent and child 
+childNodes 
+firstChild , lastChild 
+appendChild 
+removeChild 
+
+text is the first child in body. 
+
+
+<!--     to render the element   -->
+<!--type 1  document.body.firstChild.nextSibling -->
+to walk through one to another object. 
+
+ type 2 -> document.getElementById("intro")
