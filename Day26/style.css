@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: rgb(126, 157, 235);
+    height: 70vh;
+    /* background-image: url(globe-3383088_1280.jpg); */
+}
+
+.container{
+    margin-left: 30vw;
+}
+
+.heading{
+    padding-top: 17vh;
+    word-spacing: 3px;  
+    font-size: 2rem;
+    letter-spacing: 6px;
+
+}
+
+.number{
+    padding-left: 20vh;
+    padding-top:2vh;
+}
+
+.start{
+    padding-left: 20vh;
+    padding-top:1vh;
+}
+
+.button-add{
+    padding-top: 5vh;
+    padding-left: 6vw;
+}
+
+button{
+    /* word-spacing: 4px;
+    letter-spacing: 1px; */
+    padding-top: 1px;
+    font-size: 0.7rem;
+}
+
+.btn1{
+    height: 5vh;
+    width: 8vw;
+}
+
+.btn2{
+    height: 5vh;
+    width: 13vw;
+}
+
+.btn3{
+    height: 5vh;
+    width: 4vw;
+}
+
+.search{
+    margin-top: 5vh;
+}
+
+.searchbar{
+    height: 5vh;
+    width: 35vw;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
