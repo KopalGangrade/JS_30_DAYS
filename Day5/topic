@@ -1,0 +1,30 @@
+Table of contents
+Arrays
+How to create an empty array
+How to create an array with values
+Creating an array using split
+Accessing array items using index
+Modifying array element
+Methods to manipulate array
+Array Constructor
+Creating static values with fill
+Concatenating array using concat
+Getting array length
+Getting index an element in arr array
+Getting last index of an element in array
+Checking array
+Converting array to string
+Joining array elements
+Slice array elements
+Splice method in array
+Adding item to an array using push
+Removing the end element using pop
+Removing an element from the beginning
+Add an element from the beginning
+Reversing array order
+Sorting elements in array
+Array of arrays
+💻 Exercise
+Exercise: Level 1
+Exercise: Level 2
+Exercise: Level 3
